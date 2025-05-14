@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buyurtma Sayti</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #00c6ff, #0072ff);
+      color: #fff;
+    }
+    header {
+      text-align: center;
+      padding: 50px 20px;
+    }
+    header h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.2em;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+    }
+    .card {
+      background: rgba(255,255,255,0.1);
+      padding: 30px;
+      border-radius: 15px;
+      margin-bottom: 30px;
+      box-shadow: 0 10px 15px rgba(0,0,0,0.2);
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    ul li {
+      background: rgba(255,255,255,0.2);
+      margin: 10px 0;
+      padding: 10px;
+      border-radius: 8px;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 8px;
+    }
+    form button {
+      background: #fff;
+      color: #0072ff;
+      border: none;
+      padding: 12px 20px;
+      font-size: 1em;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    footer {
+      text-align: center;
+      padding: 30px;
+      font-size: 0.9em;
+      background: rgba(0,0,0,0.2);
+    }
+    a { color: white; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Xizmatlar Buyurtma Sayti</h1>
+    <p>Slayd, hujjat, rasm, masa ishlash, maqola tayyorlayman. Buyurtma qoldiring!</p>
+  </header>
+
+  <div class="container">
+    <div class="card">
+      <h2>Xizmatlarim va Narxlar</h2>
+      <ul>
+        <li>✅ PowerPoint slayd tayyorlash — 15 000 so'm (1-19 list), 20 000 so'm (20-25 list)</li>
+        <li>✅ Word hujjat yozish va tahrirlash — 5$–200$</li>
+        <li>✅ Maqola, referat, tezis yozish — 1 listi 20 000 so'm</li>
+        <li>✅ Masala ishlash — 10 000–75 000 so'm</li>
+        <li>✅ Kurs ishi — 10$–75$</li>
+        <li>✅ Chizma va rasm chizish — 50 000 – 300 000 so'm</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Buyurtma Qoldiring</h2>
+      <form action="mailto:king1wolf1007@gmail.com" method="POST" enctype="text/plain">
+        <input type="text" name="Ism" placeholder="Ismingiz" required>
+        <input type="email" name="Email" placeholder="Email manzilingiz" required>
+        <textarea name="Buyurtma" rows="5" placeholder="Qanday ish kerak? Masalan: slayd, mavzu: Cho‘yan olish" required></textarea>
+        <button type="submit">Yuborish</button>
+      </form>
+    </div>
+
+    <div class="card">
+      <h2>Aloqa</h2>
+      <p>📧 Email: king1wolf1007@gmail.com</p>
+      <p>📱 Telegram: <a href="https://t.me/Buyurtma_xizmat1">@Buyurtma_xizmati</a></p>
+    </div>
+  </div>
+
+  <footer>
+    <b>Sana:</b> <span id="visitTime"></span>
+    <script>
+      const now = new Date();
+      const sana = now.toLocaleDateString('uz-UZ');
+      const vaqt = now.toLocaleTimeString('uz-UZ');
+      document.getElementById('visitTime').textContent = sana + ' ' + vaqt;
+    </script>
+    
+  </footer>
+
+</body>
+</html>
