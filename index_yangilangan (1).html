@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="uz">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Buyurtma Sayti</title>
+<link href="favicon.ico" rel="icon" type="image/x-icon"/>
+<link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+<header>
+<h1>Xizmatlar Buyurtma Sayti</h1>
+<p>Slayd, hujjat, rasm, masala ishlash, maqola tayyorlayman. Buyurtma qoldiring!</p>
+</header>
+<div class="container">
+<div class="card">
+<h2>Xizmatlarim va Narxlar</h2>
+<ul>
+<li>✅ PowerPoint slayd — 15 000–20 000 so'm</li>
+<li>✅ Word hujjat — 5$–200$</li>
+<li>✅ Maqola, referat, tezis — 1 listi 20 000 so'm</li>
+<li>✅ Kurs ishi — 10$–75$</li>
+<li>✅ Masala ishlash — 10 000–75 000 so'm</li>
+<li>✅ Rasm chizish — 50 000–300 000 so'm</li>
+</ul>
+</div>
+<div class="card">
+<h2>Buyurtma Qoldiring</h2>
+<p>Buyurtma berish uchun quyidagi tugmani bosing:</p>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSe9GAlDKcXcUfQmVyPqJ4jOZ4VvZ4EfUCrkL-dROahXBFpJhw/viewform?usp=header" target="_blank">
+<button type="button">Buyurtma formasiga o‘tish</button>
+</a>
+</div>
+<div class="card">
+<h2>Aloqa</h2>
+<p>📧 Email: king1wolf1007@gmail.com</p>
+<p>📱 Telegram: <a href="https://t.me/Dilshodbek_1305">@Dilshodbek_1305</a></p>
+</div>
+</div>
+<footer>
+<b>Sana:</b> <span id="visitTime"></span>
+<script>
+      const now = new Date();
+      const sana = now.toLocaleDateString('uz-UZ');
+      const vaqt = now.toLocaleTimeString('uz-UZ');
+      document.getElementById('visitTime').textContent = sana + ' ' + vaqt;
+    </script>
+</footer>
+</body>
+</html>
